@@ -24,3 +24,9 @@ DOI:
 /content/energydata_complete.csv
 
 El dataset no se incluye directamente en este repositorio. Se conserva la referencia a la fuente original para mantener trazabilidad y reproducibilidad.
+
+## Diccionario de variables
+
+El diccionario básico de variables utilizado en el Corte 1 se encuentra en:
+
+`data/DICCIONARIO_VARIABLES.md`
