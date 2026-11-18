@@ -4,14 +4,14 @@ Fuente revisada: `Guia_Banco_Proyectos_Profundizacion_III_IA_2026-II.pdf`, pági
 
 | Requisito de la guía | Implementación prevista o existente | Evidencia | Estado |
 |---|---|---|---|
-| Pipeline reproducible de preprocesamiento y entrenamiento | Scripts nuevos bajo `src/`, con rutas relativas, semilla y separación cronológica | `src/audit_corte1.py`; pipeline CP09 pendiente | En progreso |
-| Benchmark de alternativas comparables | Comparar regresores sobre el mismo Train/Validation, sin usar Test | Auditoría deja la referencia del Corte 1; benchmark CP10 pendiente | Pendiente |
+| Pipeline reproducible de preprocesamiento y entrenamiento | Script con rutas relativas, semilla y separación cronológica | `src/corte2_pipeline.py` | Cumplido |
+| Benchmark de alternativas comparables | Baselines, Ridge, HistGradientBoosting y Extra Trees bajo la misma partición | `reports/cp10_benchmark_validacion.csv` | Cumplido |
 | Validación temporal | Corte 1 definió Train/Validation/Test consecutivos: 13.814/2.960/2.961 | `reports/cp08_auditoria_corte1.json` confirma límites temporales | Cumplido para el protocolo; falta aplicar a CP10-CP12 |
-| Ajuste razonable de hiperparámetros | Búsqueda acotada con parámetros y justificación explícitos, solo sobre validación | Registro de configuración CP11 pendiente | Pendiente |
+| Ajuste razonable de hiperparámetros | Configuraciones acotadas de regularización/capacidad, solo Train/Validation | `reports/cp11_configuracion_y_metadatos.json` | Cumplido |
 | Características temporales sin datos futuros | Calendario derivado de `date`; documentar disponibilidad de cada entrada | Corte 1 usa `hour`, día, mes y fin de semana; extensión CP09 pendiente | En progreso |
 | Métricas MAE, RMSE y R² | Calcular las tres métricas en validación y por segmentos normal/alto | Réplica CP08 confirmó las métricas base | Cumplido como referencia; falta para modelos CP10 |
-| Análisis de residuos y picos | Residuos, errores extremos, alto consumo según P90 entrenado, gráficas temporales | P90 Train=220 Wh confirmado; análisis CP12 pendiente | En progreso |
-| Importancia de variables | Importancia por permutación o mecanismo compatible con el modelo seleccionado | Análisis CP12 pendiente | Pendiente |
+| Análisis de residuos y picos | Residuos, extremos, segmentos P90 y gráficas | `reports/cp12_*` | Cumplido |
+| Importancia de variables | Permutación sobre Validation del modelo provisional | `reports/cp12_importancia_permutacion.csv` | Cumplido |
 | Ablación de `rv1` y `rv2` | Ejecutar configuraciones sin aleatorias, con `rv1`, con `rv2` y con ambas | CP08 confirma igualdad exacta de ambas; experimento CP12 pendiente | En progreso |
 | Modelo provisional y alternativas descartadas | Selección basada en validación, interpretabilidad y errores, no solo una métrica | Decisión CP13 pendiente | Pendiente |
 | README, diagrama de flujo y bitácora de IA actualizados | Actualizar documentos y registrar validaciones de IA | README y bitácora existentes; actualización Corte 2 pendiente | En progreso |

@@ -1,0 +1,23 @@
+{
+  "prediction_contract": "Calendar and contemporaneous exogenous readings only; no target lags, current target, or future rows.",
+  "test_policy": "Test begins at row 16774 and was neither fitted, predicted nor scored by this CP09-CP12 run.",
+  "split": {
+    "train_rows": 13814,
+    "validation_rows": 2960,
+    "test_rows_reserved": 2961
+  },
+  "p90_train_wh": 220.0,
+  "selected_provisional_model_by_validation_rmse": "extra_trees_regularized",
+  "selected_validation_metrics": {
+    "mae_wh": 50.031055593993095,
+    "rmse_wh": 85.34787130732877,
+    "r2": 0.14383931187688792
+  },
+  "software": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pandas": "3.1.1",
+    "scikit_learn": "1.9.1"
+  },
+  "random_state": 2026
+}
