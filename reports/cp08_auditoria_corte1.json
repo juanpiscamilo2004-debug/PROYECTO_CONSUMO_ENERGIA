@@ -1,0 +1,112 @@
+{
+  "audit_type": "independent exact replication of Corte 1 protocol",
+  "data": {
+    "path": "C:\\Users\\USUARIO\\Documents\\Codex\\2026-11-18\\antes-de-comenzar-el-corte-2\\PROYECTO_CONSUMO_ENERGIA\\data\\energydata_complete.csv",
+    "sha256": "2820bf712ad0275cb18b85a05250926100d8e65ebb9f4d2d016ca91ea152a25d",
+    "shape": [
+      19735,
+      29
+    ],
+    "columns": [
+      "date",
+      "Appliances",
+      "lights",
+      "T1",
+      "RH_1",
+      "T2",
+      "RH_2",
+      "T3",
+      "RH_3",
+      "T4",
+      "RH_4",
+      "T5",
+      "RH_5",
+      "T6",
+      "RH_6",
+      "T7",
+      "RH_7",
+      "T8",
+      "RH_8",
+      "T9",
+      "RH_9",
+      "T_out",
+      "Press_mm_hg",
+      "RH_out",
+      "Windspeed",
+      "Visibility",
+      "Tdewpoint",
+      "rv1",
+      "rv2"
+    ],
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "date_min": "2016-01-11 17:00:00",
+    "date_max": "2016-05-27 18:00:00",
+    "rv1_equals_rv2": true,
+    "rv_max_absolute_difference": 0.0
+  },
+  "split": {
+    "train_rows": 13814,
+    "validation_rows": 2960,
+    "test_rows": 2961,
+    "train_end": "2016-04-16 15:10:00",
+    "validation_start": "2016-04-16 15:20:00",
+    "validation_end": "2016-05-07 04:30:00",
+    "test_start": "2016-05-07 04:40:00"
+  },
+  "features_excluding_rv1_rv2": [
+    "lights",
+    "T1",
+    "RH_1",
+    "T2",
+    "RH_2",
+    "T3",
+    "RH_3",
+    "T4",
+    "RH_4",
+    "T5",
+    "RH_5",
+    "T6",
+    "RH_6",
+    "T7",
+    "RH_7",
+    "T8",
+    "RH_8",
+    "T9",
+    "RH_9",
+    "T_out",
+    "Press_mm_hg",
+    "RH_out",
+    "Windspeed",
+    "Visibility",
+    "Tdewpoint",
+    "hour",
+    "day_of_week",
+    "month",
+    "weekend"
+  ],
+  "validation_metrics": {
+    "baseline_historical_median": {
+      "mae_wh": 42.604729729729726,
+      "rmse_wh": 98.1076008846988,
+      "r2": -0.13129327795572987
+    },
+    "baseline_hourly_median": {
+      "mae_wh": 36.83445945945946,
+      "rmse_wh": 91.33340320244582,
+      "r2": 0.019541590250032548
+    },
+    "linear_regression": {
+      "mae_wh": 52.72166358990193,
+      "rmse_wh": 86.20299984131972,
+      "r2": 0.12659705061819226
+    },
+    "ridge_alpha_1": {
+      "mae_wh": 52.76140823442112,
+      "rmse_wh": 86.20638789665907,
+      "r2": 0.12652839417506823
+    }
+  },
+  "p90_train_wh": 220.0,
+  "validation_high_consumption_rows": 223
+}
