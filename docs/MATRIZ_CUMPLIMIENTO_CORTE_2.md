@@ -15,7 +15,7 @@ Fuente revisada: `Guia_Banco_Proyectos_Profundizacion_III_IA_2026-II.pdf`, pági
 | Ablación de `rv1` y `rv2` | Ejecutar configuraciones sin aleatorias, con `rv1`, con `rv2` y con ambas | CP08 confirma igualdad exacta de ambas; experimento CP12 pendiente | En progreso |
 | Modelo provisional y alternativas descartadas | Selección basada en validación, interpretabilidad y errores, no solo una métrica | Decisión CP13 pendiente | Pendiente |
 | README, diagrama de flujo y bitácora de IA actualizados | Actualizar documentos y registrar validaciones de IA | README y bitácora existentes; actualización Corte 2 pendiente | En progreso |
-| Presentación de Corte 2 con evidencia y gráfica temporal | Preparar sustentación de 8-10 minutos con benchmark, validación, errores, decisión y gráfica temporal | Presentación CP14 pendiente | Pendiente |
+| Presentación de Corte 2 con evidencia y gráfica temporal | Presentación de 12 diapositivas y guion equilibrado para cuatro integrantes | `reports/presentacion/` | Cumplido |
 | Test reservado para Corte 3 | Prohibir su uso en selección, ajuste y comparación de Corte 2 | `AGENTS.md`, `CHECKPOINT_CP08.md` y la auditoría conservan el bloque sin evaluar | Cumplido |
 | Fuente y trazabilidad del dataset | Conservar referencia UCI, DOI y la guía oficial | `data/README.md`, SHA-256 en CP08 y copia idéntica de la guía en `docs/` | Cumplido |
 
