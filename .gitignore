@@ -1,5 +1,13 @@
 # Datos locales
 *.csv
+# Evidencias reproducibles del Corte 2 (no son datos originales)
+!reports/cp10_benchmark_validacion.csv
+!reports/cp12_ablacion_rv.csv
+!reports/cp12_metricas_por_segmento.csv
+!reports/cp12_picos_peores_predichos.csv
+!reports/cp12_residuos_validacion.csv
+!reports/cp12_importancia_permutacion.csv
+data/energydata_complete.csv
 *.zip
 
 # Python
